@@ -1,0 +1,843 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #100c26; /* Primary color for the header */
+    color: yellow; /* Text color for the header */
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight:lighter;
+    margin-bottom: 0.5rem;
+    text-align:center;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight:lighter;
+    margin-bottom: 0.5rem;
+    text-align:center;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 2;
+    display: block;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #0056b3;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #004080;
+    color: #fff;
+}
+
+/* Sidebar Styles */
+
+.sidebar{
+    width: 250px;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #eea154;
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Content Styles */
+.content {
+    flex: 2;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.content .main-topic {
+    color: rgb(87, 87, 238);
+    font-size: 1.2rem;
+}
+
+.example{
+    margin-top: 15px;
+}
+
+.content p {
+    text-align: justify;
+    text-indent: 5px;
+    font-size: 1.3rem;
+}
+
+.questions p {
+    font-size: 1.25rem;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    color: #333;
+    transition: color 0.3s;
+}
+
+li a:hover {
+    color: #007BFF;
+}
+
+li a::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-color: #007BFF;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+
+li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Advertisement Styles */
+.advertisement {
+    flex: 1;
+    max-width: 35%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.advertisement h2 {
+    font-size: 1.25rem;
+    color: #333333fc;
+    text-align: center;
+    border-bottom: 1px solid #333333fc;
+}
+
+.advertisement #boost-fluency,
+.advertisement #job-opportunity,
+.advertisement #contact-me {
+    margin-top: 4rem;
+}
+
+/* Styles for Find an English Tutor */
+#find-tutor,
+#apply-tutor {
+    color: #007BFF;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+#find-tutor:hover,
+#apply-tutor:hover {
+    color: #0056b3;
+}
+
+#find-tutor::before,
+#apply-tutor::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-color: #007BFF;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+
+#find-tutor:hover::before,
+#apply-tutor:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Questions Styles */
+.questions li {
+    font-size: 1.25rem;
+}
+
+/* Advertisement Text Styles */
+.advertisement p {
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 1rem;
+}
+
+.advertisement p span {
+    color: #333333fc;
+    font-size: 1.125rem;
+}
+
+/* Advertisement Meta Styles */
+.advertisement #author-name {
+    font-size: 0.875rem;
+    color: #777;
+}
+
+.advertisement #advertisement-time,
+.advertisement #advertisement-date {
+    font-size: 1rem;
+    color: #777;
+    padding: 5px;
+    border: 1px solid #777;
+    border-radius: 2px;
+}
+
+#example-sentence {
+    color: rgb(15, 89, 102);
+    font-weight: bold;
+}
+
+.sentence-patter-analysis {
+    color: darkgreen;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+details {
+    padding: 15px 0 15px 0;
+}
+
+details .translation {
+    cursor: pointer;
+}
+
+details .translation:hover {
+    color: orangered;
+}
+
+
+details summary a {
+    padding-left: 10px;
+}
+
+
+details summary {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+details summary:hover {
+    color: darkolivegreen;
+}
+
+
+/* Popup Styles */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+strong {
+    font-size: 1.2rem;
+}
+
+
+.speaker-alex {
+    color: #052c53; /* Blue color for Speaker A */
+    font-size: 1.3rem;
+}
+
+.speaker-sam {
+    color: #3b0808; /* Red color for Speaker B */
+    font-size: 1.3rem;
+
+}
+
+
+.speaker-a {
+    color: #052c53; /* Blue color for Speaker A */
+    font-size: 1.3rem;
+
+
+}
+
+.speaker-b {
+    color: #3b0808; /* Red color for Speaker B */
+    font-size: 1.3rem;
+
+}
+
+
+
+h4 {
+    font-size: 1.1rem;
+    color: green;
+    /*border-bottom: 1px solid rgb(188, 181, 181);*/
+}
+
+.content .sub-topic {
+    font-size: 1.1rem;
+    color: green;
+
+    border-bottom: 1px solid rgb(188, 181, 181);
+}
+
+.content .sub-topic ol li {
+    font-weight: bold;
+    margin-bottom: 8px;
+    padding: 1rem;
+}
+
+.phrases {
+    list-style: lower-alpha;
+    padding: 0;
+}
+
+#phrases{
+    margin-top: 50px;
+}
+
+#vocabulary{
+    margin-top: 50px;
+}
+
+.phrases div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phrases img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: none;
+    padding: none;
+}
+
+.heading img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+
+.theme{
+    text-align: center;
+}
+
+.imageattribution{
+    font-size: 13px;
+}
+
+
+
+.phrases ol li{
+    font-size: 1.25rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+ol li a {
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+
+
+
+.dialogue-container p{
+    font-size: 1.3rem;
+}
+
+.cantonese{
+    font-size: 1rem;
+}
+
+
+.translation{
+    font-size: 1rem;
+}
+
+.explanation{
+    font-size: 1.2rem;
+}
+
+p img{
+    background-size: 20px 20px;
+    content: '';
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    margin-left: 6px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    
+}
+
+.audio-icon:hover {
+    filter: brightness(80%); /* Adjust the brightness level as needed */
+    transform: scale(1.3); /* Adjust the scale factor for the desired enlargement */
+}
+
+.audio-icon {
+    transition: transform 0.3s ease; /* Adjust the duration and timing function as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------This is for the go to bottom -----------------*/
+
+/* Styling for the options button */
+#options-container {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 180px;
+    z-index: 99;
+    /*height: 400px;*/
+    overflow-y: scroll;
+  }
+  
+  #options-container.visible {
+    display: block;
+  }
+  
+  .option {
+    padding: 10px;
+    cursor: pointer;
+    /* Add additional styling for the options */
+  }
+  
+  #go-to {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 100;
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+  }
+  
+  #go-to:hover {
+    background-color: #000;
+  }
+
+
+  .option:hover {
+    background-color: #ddd; /* Change the background color on hover */
+    color: #333; /* Change the text color on hover */
+  }
+
+  .visible {
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Adjust the transition duration as needed */
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/*-------------This is end for the go to bottom -----------------*/
+
+
+.amazingtalkerpic{
+    width: 90%;
+}
+
+.amazingtalkerpic1{
+    width: 50%;
+}
+
+.preplypic{
+    width: 90%;
+}
+
+.vocab {
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 0 20px 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+    margin-top: 20px;
+    background-color: rgb(223, 245, 241);
+}
+
+
+
+.phrase_time_place_etc {
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 0 20px 0 20px;
+    box-shadow: 0 4px 8px #0000001a; /* Adjust the values as needed */
+    margin-top: 20px;
+    background-color: rgb(243, 243, 243);
+}
+
+.sentence_patterns {
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 0 20px 0 20px;
+    box-shadow: 0 4px 8px #0000001a; /* Adjust the values as needed */
+    margin-top: 20px;
+    background-color: rgb(226, 242, 182);
+}
+
+
+.parts_of_speech {
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 0 20px 0 20px;
+    box-shadow: 0 4px 8px #0000001a; /* Adjust the values as needed */
+    margin-top: 20px;
+    background-color: rgb(184, 244, 226);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query for Smaller Screens (less than 600px) */
+@media screen and (max-width: 600px) {
+    strong {
+        font-size: 0.9rem;
+    }
+
+    .speaker-a,
+    .speaker-olivia,
+    .speaker-alex {
+        color: #052c53;
+        font-size: 0.9rem;
+    }
+
+    .speaker-b,
+    .speaker-sam,
+    .speaker-jasmine {
+        color: #641104;
+        font-size: 0.9rem;
+    }
+
+    .content p {
+        text-align: justify;
+        text-indent: 5px;
+        font-size: 0.9rem;
+    }
+   
+
+    ol li a {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    .sidebar {
+        width: 0;
+    }
+
+    .sidebar a {
+        text-align: center;
+        padding: 1.5rem;
+        display: block;
+    }
+
+    .main-content {
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        flex: 1;
+        padding: 0.8rem;
+    }
+
+    .content {
+        margin-right: 0;
+    }
+
+    .advertisement {
+        flex: 1;
+        max-width: 100%;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    header .logo {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .hamburger {
+        top: 0.75rem;
+        right: 0.75rem;
+    }
+
+    .hamburger div {
+        width: 1.25rem;
+        height: 0.125rem;
+        margin: 0.25rem 0;
+    }
+
+    nav a {
+        padding: 0.75rem;
+        font-size: 0.7rem;
+    }
+
+    .sidebar {
+        padding-top: 1.5rem;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .content h2 {
+        font-size: 0.9rem;
+        color: #333;
+    }
+
+    .questions p {
+        font-size: 1rem;
+    }
+
+    .questions ol {
+        padding: 15px;
+        width: 95%;
+    }
+
+    .advertisement h2 {
+        font-size: 1rem;
+    }
+
+    #find-tutor,
+    #apply-tutor {
+        font-size: 0.875rem;
+    }
+
+    .questions li,
+    .advertisement p {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .content .sub-topic {
+        font-size: 1rem;
+        color: green;
+        border-bottom: 1px solid rgb(188, 181, 181);
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+        border-bottom: 1px solid rgb(188, 181, 181);
+    }
+
+    .advertisement p span {
+        font-size: 1.125rem;
+    }
+
+    .advertisement #advertisement-time,
+    .advertisement #advertisement-date {
+        font-size: 0.9em;
+    }
+
+    footer {
+        padding: 1rem;
+        font-size: 0.875rem;
+        margin-top: 1rem;
+    }
+
+
+    .explanation {
+        font-size: 0.9rem;
+    }
+
+    p img{
+        background-size: 20px 20px;
+        content: '';
+        vertical-align: middle;
+        width: 11px;
+        height: 11px;
+        margin-left: 6px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        
+    }
+
+    .phrases img{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .phrases ol li{
+        font-size: 0.9rem;
+    }
+
+    
+}

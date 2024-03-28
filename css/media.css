@@ -1,0 +1,420 @@
+.button-options-down{
+  display: none;
+}
+
+/* For mobile phones: */
+@media (max-width: 768px) {
+
+    body{
+      width: 100%;
+    }
+
+    .I-Content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+      }
+
+      .choice, .choice2, .choice3, .choice4, .choice5, .choice6, .choice7, .choice8, .choice9, .choice10 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 10px;
+        
+    }
+
+    .II-Content{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .A-container{
+        width: 450px;
+        margin: 0 30px 10px 30px;        
+    }
+
+    .B-container{
+        height: 500px;
+        width: 90%;
+        border: 0.5px solid rgb(242, 236, 236);
+        margin: 0 0 10px 0;        
+
+    }
+
+    .questions {
+        width: 100%;
+        font-size: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 20px;
+        line-height: 40px;
+        font-weight: 600;
+        color: rgb(36, 36, 89);
+        flex-direction: column;
+    }
+
+    #video-container {
+        position: relative;
+        height: 200px;
+        width: 350px;
+        border-radius: 10px;
+        margin-top: 0;
+
+      }
+
+    #player{
+        border-radius: 10px;
+        border: 2px solid #E6E6FA;
+        height: 100%;
+        width: 100%;
+      }
+
+      .button-options {
+        position: relative;
+        margin-top: 3px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+      }
+      
+    .options{
+        width:40%;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        
+    }
+
+    .switch{
+        font-size: 12px;
+        border: 1px solid rgb(197, 192, 192);
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgba(193, 175, 175, 0.212);
+        color: gray;
+        width: 100%;
+        cursor: pointer;
+        
+    }
+
+    .logo .logo1{
+        font-size: 40px;
+        text-align: center;
+        padding: 5px;
+        font-weight: 600;
+
+      }
+
+      .transcript-line span {
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .transcript-line strong {
+      text-decoration: none;
+      font-size: 16px;
+      padding-right: 10px;
+  }
+
+  .button-options{
+    display: none;
+  }
+
+  .button-options-down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .button-options-down button{
+    padding: 8px;
+    width: 125px;
+  }
+
+  #transcript-container {
+    width: 100%;
+    white-space: normal;
+    padding: 20px;
+    overflow: hidden;
+    line-height: 0.9;
+  }
+
+  .transcript-line{
+    margin: 30px 2px 30px 2px;
+}
+
+
+
+
+
+
+/*----------------------------------Vocabulary Activity Section ---------------------------------------*/
+/* Vocabulary Section */
+.vocabulary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #d6e3eb;
+  padding: 10px 0;
+  margin: 0;
+  width: 100%;
+}
+
+.vocabulary-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 25px;
+  color: #111130;
+  height: 90px;
+}
+
+.act-instruction {
+  font-size: 18px;
+  color: rgb(50, 49, 49);
+  margin: 20px;
+  width: 90%;
+}
+
+/* Question Section */
+.quest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #fff;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.quest-number {
+  margin-right: 10px;
+}
+
+.questions {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: rgb(36, 36, 89);
+  flex-direction:column;
+  text-align: justify;
+}
+
+.questions audio {
+  height: 25px;
+  margin: 10px 0 0 20px;
+  background-color: #ffff;
+  width: 30%;
+}
+
+.questions img{
+  height: 20px;
+  width: 20px;
+  box-shadow: none;
+  margin-left: 20px;
+  padding-top: 10px;
+  border-radius: 5px;
+  transition: transform 0.1s;
+  cursor: pointer;
+}
+
+
+
+.questions img:hover {
+  transform: scale(1.03);
+}
+
+.listen{
+  width:95%;
+  margin-left: 3%;
+}
+
+.vocab-application .listen img{
+  height: 15px;
+  width: 15px;
+  box-shadow: none;
+  margin-left: 20px;
+  border-radius: 5px;
+  transition: transform 0.1s;
+  cursor: pointer;
+}
+
+.vocab-application .listen img:hover {
+  transform: scale(1.03);
+}
+
+
+/* Choice Section */
+.choice,
+.choice2,
+.choice3,
+.choice4,
+.choice5,
+.choice6,
+.choice7,
+.choice8,
+.choice9,
+.choice10 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 10px;
+  padding: 10px;
+  width: 95%;
+}
+
+.choice span,
+.choice2 span,
+.choice3 span,
+.choice4 span,
+.choice5 span,
+.choice6 span,
+.choice7 span,
+.choice8 span,
+.choice9 span,
+.choice10 span {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 10px 20px;
+  padding: 8px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: background-color 0.5s, transform 0.5s;
+  border: 1px solid gray;
+  width: 90%;
+
+}
+
+.choice span:hover,
+.choice2 span:hover,
+.choice3 span:hover,
+.choice4 span:hover,
+.choice5 span:hover,
+.choice6 span:hover,
+.choice7 span:hover,
+.choice8 span:hover,
+.choice9 span:hover,
+.choice10 span:hover {
+  background-color: rgb(239, 186, 186);
+  color: black;
+  transform: scale(1.03);
+  border-radius: 5px;
+}
+
+/* Vocabulary Application */
+.vocab-application {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.vocab-application div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.vocab-sentence li {
+  list-style-type:lower-alpha;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+  width: 97%;
+}
+
+.vocab-sentence li img{
+  height: 15px;
+  width: 15px;
+  box-shadow: none;
+  margin-left: 20px;
+  padding-top: 10px;
+  border-radius: 5px;
+  transition: transform 0.1s;
+  cursor: pointer;
+}
+
+
+
+.vocab-application img:hover {
+  transform: scale(1.03);
+}
+
+
+
+
+.vocab-sentence audio {
+  height: 25px;
+  margin: 10px 0 0 20px;
+  background-color: #ffff;
+  width: 30%;
+}
+
+.vocab-application img {
+  box-shadow: 0 4px 8px rgba(17, 4, 4, 0.599);
+  width: 300px;
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+.vocab-application img:hover {
+  transform: scale(1.03);
+}
+
+.vocab-application-title {
+  text-align: center;
+  margin: 20px 0 20px 0;
+  border-top: 1px solid gray;
+  padding-top: 20px;
+}
+
+.vocab-act {
+  background-color: white;
+  width: 100%;
+}
+
+
+
+/*-------------------------------- End of Vocabulary Activity Section ---------------------------------*/      
+      
+
+     
+
+/* Styling for the footer */
+.footer {
+    background-color: #d6e3eb; /* Darker blue color for footer background */
+    color: black; /* Light gray color for footer text */
+    font-size: 15px;
+    text-align: center; /* Center text within the footer */
+    padding: 3px 0; /* Add padding to the footer */
+    width: 100%;
+  }
+  }
+
+  
+  
